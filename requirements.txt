@@ -1,0 +1,7 @@
+Pyrogram==2.0.106
+TgCrypto==1.2.5
+python-dotenv==1.0.1
+loguru==0.7.2
+pydantic==2.6.4
+pydantic-settings==2.2.1
+pydantic_core==2.16.3

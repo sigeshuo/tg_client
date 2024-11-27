@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: 'tg-client'
+    build:
+      context: .
+    stop_signal: SIGINT
+    restart: unless-stopped
+    environment:
+      - API_ID=
+      - API_HASH=
+    volumes:
+      - .:/app
