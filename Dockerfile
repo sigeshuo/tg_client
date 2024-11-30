@@ -1,6 +1,6 @@
 FROM python:3.10.11-alpine3.18
 
-WORKDIR app/
+WORKDIR /app
 
 COPY requirements.txt requirements.txt
 

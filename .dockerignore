@@ -1,0 +1,3 @@
+venv/
+docker-build.sh
+docker-compose.yml
