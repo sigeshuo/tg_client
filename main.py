@@ -43,6 +43,9 @@ async def process_user_input():
             await client_manager.show_clients()
         elif choice == '3':
             client_manager.change_msg()
+        elif choice == '4':
+            await client_manager.stop_clients()
+            exit()
         else:
             print("无效选项，请重新选择。")
 

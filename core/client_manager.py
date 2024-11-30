@@ -120,3 +120,9 @@ class ClientManager:
                 logger.info(f"消息：{message.text}")
         except Exception as e:
             logger.info(f"处理消息时出错: {e}")
+
+    async def stop_clients(self):
+        for client in self.clients:
+            logger.info(f":::[{client.name}][{client.phone_number}]正在退出！")
+            await client.stop()
+        self.clients.clear()
